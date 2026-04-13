@@ -1,0 +1,141 @@
+{
+  "paper_id": "ewaste",
+  "config_file": "pipeline/mc_configs/ewaste.json",
+  "seed": 42,
+  "n_draws": 100000,
+  "n_channels": 6,
+  "correlation_rho": 0.3,
+  "private_payoff_B": 1050.0,
+  "beta_w": {
+    "median": 6.59,
+    "mean": 6.71,
+    "std": 1.25,
+    "p1": 4.31,
+    "p5": 4.87,
+    "p95": 8.94,
+    "p99": 10.15,
+    "ci_90": [
+      4.9,
+      8.9
+    ],
+    "ci_99": [
+      4.3,
+      10.1
+    ],
+    "p_below_1": 0.0,
+    "p_below_1_pct": "0.0000%"
+  },
+  "impossibility_floor": {
+    "floor_value": 2.5,
+    "p_below_floor": 0.0,
+    "p_below_floor_pct": "0.0000%"
+  },
+  "welfare_cost": {
+    "total_median_B": 6922.2,
+    "total_mean_B": 7045.2,
+    "total_p5_B": 5115.9,
+    "total_p95_B": 9389.5
+  },
+  "pi_sa": {
+    "median_B": 5872.2,
+    "mean_B": 5995.2,
+    "p5_B": 4065.9,
+    "p95_B": 8339.5
+  },
+  "channel_statistics": {
+    "C1_planned_obsolescence": {
+      "median": 2995.9,
+      "mean": 3089.6,
+      "p5": 1994.3,
+      "p95": 4493.2,
+      "std": 773.6
+    },
+    "C2_toxic_health": {
+      "median": 1598.9,
+      "mean": 1660.2,
+      "p5": 1022.4,
+      "p95": 2508.2,
+      "std": 460.8
+    },
+    "C3_environmental": {
+      "median": 999.5,
+      "mean": 1041.2,
+      "p5": 625.2,
+      "p95": 1599.0,
+      "std": 304.1
+    },
+    "C4_lost_materials": {
+      "median": 62.0,
+      "mean": 62.0,
+      "p5": 44.4,
+      "p95": 79.4,
+      "std": 10.7
+    },
+    "C5_carbon": {
+      "median": 698.7,
+      "mean": 725.8,
+      "p5": 446.1,
+      "p95": 1096.2,
+      "std": 203.1
+    },
+    "C6_governance": {
+      "median": 449.5,
+      "mean": 466.3,
+      "p5": 289.6,
+      "p95": 699.9,
+      "std": 127.6
+    }
+  },
+  "sensitivity_matrix": [
+    {
+      "vsl_multiplier": 0.5,
+      "values": {
+        "dc_0pct": 5.06,
+        "dc_10pct": 4.55,
+        "dc_20pct": 4.05,
+        "dc_30pct": 3.54,
+        "dc_40pct": 3.04
+      }
+    },
+    {
+      "vsl_multiplier": 0.75,
+      "values": {
+        "dc_0pct": 5.77,
+        "dc_10pct": 5.2,
+        "dc_20pct": 4.62,
+        "dc_30pct": 4.04,
+        "dc_40pct": 3.46
+      }
+    },
+    {
+      "vsl_multiplier": 1.0,
+      "values": {
+        "dc_0pct": 6.49,
+        "dc_10pct": 5.84,
+        "dc_20pct": 5.19,
+        "dc_30pct": 4.54,
+        "dc_40pct": 3.89
+      }
+    },
+    {
+      "vsl_multiplier": 1.25,
+      "values": {
+        "dc_0pct": 7.2,
+        "dc_10pct": 6.48,
+        "dc_20pct": 5.76,
+        "dc_30pct": 5.04,
+        "dc_40pct": 4.32
+      }
+    },
+    {
+      "vsl_multiplier": 1.5,
+      "values": {
+        "dc_0pct": 7.92,
+        "dc_10pct": 7.12,
+        "dc_20pct": 6.33,
+        "dc_30pct": 5.54,
+        "dc_40pct": 4.75
+      }
+    }
+  ]
+}
